@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Noble Barber Studio — Experiencia premium de barbería. Tu imagen habla antes que tú." />
+  <title>Noble Barber Studio | Barbería Premium</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER / NAVBAR -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#inicio" class="nav__logo">
+        <span class="nav__logo-icon">✦</span>
+        <span class="nav__logo-text">Noble<strong>Barber</strong></span>
+      </a>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#beneficios" class="nav__link">Nosotros</a></li>
+        <li><a href="#servicios" class="nav__link">Servicios</a></li>
+        <li><a href="#galeria" class="nav__link">Galería</a></li>
+        <li><a href="#testimonios" class="nav__link">Clientes</a></li>
+        <li><a href="#reserva" class="nav__link nav__link--cta">Reservar</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <!-- Dark/Light Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+          <span class="theme-toggle__icon theme-toggle__icon--sun">☀</span>
+          <span class="theme-toggle__icon theme-toggle__icon--moon">◑</span>
+        </button>
+
+        <!-- Hamburger -->
+        <button class="nav__hamburger" id="navHamburger" aria-label="Menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         SECCIÓN 1: HERO
+    ============================================================ -->
+    <section class="hero" id="inicio">
+      <div class="hero__bg">
+        <img
+          src="https://images.unsplash.com/photo-1695173122226-3a932002ab33?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Noble Barber Studio interior"
+          class="hero__bg-img"
+          loading="eager"
+        />
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="hero__content container">
+        <div class="hero__badge reveal">
+          <span class="hero__badge-dot"></span>
+          Desde 2016 · Buenos Aires
+        </div>
+
+        <h1 class="hero__title reveal reveal--delay-1">
+          Tu imagen habla<br />
+          <em>antes que vos.</em>
+        </h1>
+
+        <p class="hero__subtitle reveal reveal--delay-2">
+          No es solo un corte. Es la primera impresión que das al mundo.<br />
+          Precisión artesanal. Estética sin concesiones.
+        </p>
+
+        <div class="hero__ctas reveal reveal--delay-3">
+          <a href="#reserva" class="btn btn--primary">
+            Reserva tu experiencia
+            <span class="btn__arrow">→</span>
+          </a>
+          <a href="#servicios" class="btn btn--ghost">
+            Ver servicios
+          </a>
+        </div>
+
+        <div class="hero__stats reveal reveal--delay-4">
+          <div class="hero__stat">
+            <span class="hero__stat-number" data-target="1500">0</span>
+            <span class="hero__stat-label">Clientes satisfechos</span>
+          </div>
+          <div class="hero__stat-divider"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-number" data-target="8">0</span>
+            <span class="hero__stat-label">Años de trayectoria</span>
+          </div>
+          <div class="hero__stat-divider"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-number" data-target="4">0</span>
+            <span class="hero__stat-label">Maestros barberos</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#beneficios" class="hero__scroll" aria-label="Scroll">
+        <span class="hero__scroll-line"></span>
+        <span class="hero__scroll-text">Descubrir</span>
+      </a>
+    </section>
+
+    <!-- ============================================================
+         SECCIÓN 2: BENEFICIOS
+    ============================================================ -->
+    <section class="benefits" id="beneficios">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">¿Por qué elegirnos?</p>
+          <h2 class="section-title">El estándar que mereces</h2>
+          <p class="section-subtitle">
+            Cada detalle de tu visita está diseñado para que salgas sintiéndote diferente.
+          </p>
+        </div>
+
+        <div class="benefits__grid">
+
+          <div class="benefit-card reveal reveal--delay-1">
+            <div class="benefit-card__icon-wrap">
+              <div class="benefit-card__icon">✦</div>
+            </div>
+            <h3 class="benefit-card__title">Barberos de élite</h3>
+            <p class="benefit-card__text">
+              Nuestros profesionales tienen más de 10 años de experiencia y formación continua en técnicas europeas y americanas. No cortamos cabello — construimos presencia.
+            </p>
+            <span class="benefit-card__tag">Certificados</span>
+          </div>
+
+          <div class="benefit-card reveal reveal--delay-2">
+            <div class="benefit-card__icon-wrap">
+              <div class="benefit-card__icon">◈</div>
+            </div>
+            <h3 class="benefit-card__title">Atención exclusiva</h3>
+            <p class="benefit-card__text">
+              Cada turno es una experiencia individual. Sin filas, sin prisa. Desde el café de bienvenida hasta la toalla caliente final, cada momento cuenta.
+            </p>
+            <span class="benefit-card__tag">1 a 1</span>
+          </div>
+
+          <div class="benefit-card reveal reveal--delay-3">
+            <div class="benefit-card__icon-wrap">
+              <div class="benefit-card__icon">◉</div>
+            </div>
+            <h3 class="benefit-card__title">Resultado garantizado</h3>
+            <p class="benefit-card__text">
+              Si el resultado no te convence, volvemos a trabajar sin cargo. Tu satisfacción no es una promesa de marketing — es nuestra política de trabajo.
+            </p>
+            <span class="benefit-card__tag">100% Garantía</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECCIÓN 3: SERVICIOS
+    ============================================================ -->
+    <section class="services" id="servicios">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Lo que hacemos</p>
+          <h2 class="section-title">Servicios que transforman</h2>
+          <p class="section-subtitle">
+            Cada servicio es una declaración de intención. Elige el tuyo.
+          </p>
+        </div>
+
+        <div class="services__grid">
+
+          <div class="service-card reveal reveal--delay-1">
+            <div class="service-card__number">01</div>
+            <div class="service-card__content">
+              <h3 class="service-card__title">Corte Clásico</h3>
+              <p class="service-card__desc">
+                La elegancia de siempre, ejecutada con precisión milimétrica. Tijeras premium, técnica depurada y un resultado que no necesita tendencias.
+              </p>
+              <ul class="service-card__features">
+                <li>Consulta de imagen previa</li>
+                <li>Lavado y acondicionamiento</li>
+                <li>Finalización con productos premium</li>
+              </ul>
+            </div>
+            <div class="service-card__footer">
+              <span class="service-card__price">$3.500</span>
+              <a href="#reserva" class="service-card__cta">Reservar →</a>
+            </div>
+          </div>
+
+          <div class="service-card service-card--featured reveal reveal--delay-2">
+            <div class="service-card__badge">Más solicitado</div>
+            <div class="service-card__number">02</div>
+            <div class="service-card__content">
+              <h3 class="service-card__title">Fade Premium</h3>
+              <p class="service-card__desc">
+                Degradados perfectos que no se difuminan en 3 días. Técnica skin fade, drop fade o mid fade ejecutada por manos que conocen cada centímetro de tu cabeza.
+              </p>
+              <ul class="service-card__features">
+                <li>Fade personalizado</li>
+                <li>Diseño de línea y contorno</li>
+                <li>Producto de fijación incluido</li>
+              </ul>
+            </div>
+            <div class="service-card__footer">
+              <span class="service-card__price">$4.200</span>
+              <a href="#reserva" class="service-card__cta">Reservar →</a>
+            </div>
+          </div>
+
+          <div class="service-card reveal reveal--delay-3">
+            <div class="service-card__number">03</div>
+            <div class="service-card__content">
+              <h3 class="service-card__title">Arreglo de Barba</h3>
+              <p class="service-card__desc">
+                La barba dice más de ti que cualquier traje. Perfilado, hidratación profunda y acabado con aceites artesanales. Navaja clásica incluida.
+              </p>
+              <ul class="service-card__features">
+                <li>Navaja de filo tradicional</li>
+                <li>Hidratación y aceites naturales</li>
+                <li>Diseño de perfil personalizado</li>
+              </ul>
+            </div>
+            <div class="service-card__footer">
+              <span class="service-card__price">$2.800</span>
+              <a href="#reserva" class="service-card__cta">Reservar →</a>
+            </div>
+          </div>
+
+          <div class="service-card reveal reveal--delay-4">
+            <div class="service-card__number">04</div>
+            <div class="service-card__content">
+              <h3 class="service-card__title">Noble Experience</h3>
+              <p class="service-card__desc">
+                Corte + Barba completa + mascarilla facial. La experiencia total Noble. Para el hombre que entiende que cuidarse no es un lujo — es una inversión.
+              </p>
+              <ul class="service-card__features">
+                <li>Corte clásico o fade</li>
+                <li>Barba completa con navaja</li>
+                <li>Mascarilla facial hidratante</li>
+              </ul>
+            </div>
+            <div class="service-card__footer">
+              <span class="service-card__price">$6.500</span>
+              <a href="#reserva" class="service-card__cta">Reservar →</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECCIÓN 4: GALERÍA
+    ============================================================ -->
+    <section class="gallery" id="galeria">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Nuestro trabajo</p>
+          <h2 class="section-title">Resultados que hablan</h2>
+        </div>
+      </div>
+
+      <div class="gallery__grid">
+
+        <div class="gallery__item gallery__item--large reveal">
+          <img
+            src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=900&q=80&auto=format&fit=crop"
+            alt="Fade premium corte moderno"
+            loading="lazy"
+          />
+          <div class="gallery__item-overlay">
+            <span>Fade Premium</span>
+          </div>
+        </div>
+
+        <div class="gallery__item reveal reveal--delay-1">
+          <img
+            src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=600&q=80&auto=format&fit=crop"
+            alt="Barbero profesional en acción"
+            loading="lazy"
+          />
+          <div class="gallery__item-overlay">
+            <span>Maestría</span>
+          </div>
+        </div>
+
+        <div class="gallery__item reveal reveal--delay-2">
+          <img
+            src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=600&q=80&auto=format&fit=crop"
+            alt="Arreglo de barba clásico"
+            loading="lazy"
+          />
+          <div class="gallery__item-overlay">
+            <span>Barba Clásica</span>
+          </div>
+        </div>
+
+        <div class="gallery__item reveal reveal--delay-1">
+          <img
+            src="https://images.unsplash.com/photo-1578390432942-d323db577792?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Corte clásico elegante"
+            loading="lazy"
+          />
+          <div class="gallery__item-overlay">
+            <span>Corte Clásico</span>
+          </div>
+        </div>
+
+        <div class="gallery__item reveal reveal--delay-3">
+          <img
+            src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=600&q=80&auto=format&fit=crop"
+            alt="Interior premium barbería"
+            loading="lazy"
+          />
+          <div class="gallery__item-overlay">
+            <span>Noble Studio</span>
+          </div>
+        </div>
+
+      
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECCIÓN 5: TESTIMONIOS
+    ============================================================ -->
+    <section class="testimonials" id="testimonios">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Ellos ya lo viven</p>
+          <h2 class="section-title">Más de 1.500 hombres<br />no se equivocan</h2>
+        </div>
+
+        <div class="testimonials__grid">
+
+          <div class="testimonial-card reveal reveal--delay-1">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <blockquote class="testimonial-card__quote">
+              "Fui una vez por recomendación y no volví a ningún otro lugar. El nivel de detalle es impresionante. En mi primer turno con Rodrigo entendió exactamente lo que quería sin que yo supiera explicarlo."
+            </blockquote>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">MA</div>
+              <div class="testimonial-card__info">
+                <strong>Martín Alvarado</strong>
+                <span>Director Creativo · Cliente desde 2021</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card testimonial-card--featured reveal reveal--delay-2">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <blockquote class="testimonial-card__quote">
+              "La Noble Experience cambió la forma en que me percibo. Entré como uno más y salí como una versión mejor de mí mismo. El ritual completo — café, toalla caliente, mascarilla — es una experiencia de otro nivel."
+            </blockquote>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">PG</div>
+              <div class="testimonial-card__info">
+                <strong>Pablo Guerrero</strong>
+                <span>Empresario · Cliente desde 2019</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal reveal--delay-3">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <blockquote class="testimonial-card__quote">
+              "Llevaba años conviviendo con una barba despareja. Después de tres sesiones con el equipo de Noble, entendí que el problema no era mi barba — era el barbero. Acá trabajan de verdad."
+            </blockquote>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">FC</div>
+              <div class="testimonial-card__info">
+                <strong>Federico Castillo</strong>
+                <span>Arquitecto · Cliente desde 2022</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECCIÓN 6: SOBRE NOSOTROS
+    ============================================================ -->
+    <section class="about" id="nosotros">
+      <div class="container">
+        <div class="about__grid">
+
+          <div class="about__visual reveal">
+            <div class="about__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1620331311520-246422fd82f9?w=800&q=80&auto=format&fit=crop"
+                alt="Noble Barber Studio"
+                loading="lazy"
+              />
+            </div>
+            <div class="about__accent-card">
+              <span class="about__accent-number">+8</span>
+              <span class="about__accent-label">Años<br />de historia</span>
+            </div>
+          </div>
+
+          <div class="about__content reveal reveal--delay-2">
+            <p class="section-label">Nuestra historia</p>
+            <h2 class="section-title">Nacimos para elevar<br />el estándar.</h2>
+            <p class="about__text">
+              En 2016, Rodrigo Noble abrió un pequeño estudio con una convicción clara: Buenos Aires merecía un espacio donde el cuidado masculino fuera tratado con la misma seriedad que cualquier oficio artesanal de élite.
+            </p>
+            <p class="about__text">
+              Ocho años después, Noble Barber Studio es el referente premium de la ciudad. No porque hayamos crecido en locales — sino porque nunca cedimos en los detalles. Cada barbero es seleccionado por su obsesión con la perfección, no solo por su técnica.
+            </p>
+            <p class="about__text">
+              <em>Porque una silla de barbería no es donde te sientas a esperar. Es donde decides quién quieres proyectar al mundo.</em>
+            </p>
+            <div class="about__signatures">
+              <div class="about__sig">
+                <span class="about__sig-name">Rodrigo Noble</span>
+                <span class="about__sig-role">Fundador & Master Barber</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECCIÓN 7: FORMULARIO DE RESERVA
+    ============================================================ -->
+    <section class="booking" id="reserva">
+      <div class="container">
+        <div class="booking__grid">
+
+          <div class="booking__info reveal">
+            <p class="section-label">Reserva tu turno</p>
+            <h2 class="section-title">Agenda tu<br />próxima versión.</h2>
+            <p class="booking__text">
+              Los turnos son limitados para garantizar atención exclusiva. Reserva tu lugar antes de que otro lo haga.
+            </p>
+
+            <div class="booking__details">
+              <div class="booking__detail">
+                <span class="booking__detail-icon">◷</span>
+                <div>
+                  <strong>Horarios</strong>
+                  <span>Lun–Sáb · 9:00 a 20:00</span>
+                </div>
+              </div>
+              <div class="booking__detail">
+                <span class="booking__detail-icon">◎</span>
+                <div>
+                  <strong>Dirección</strong>
+                  <span>Av. Santa Fe 2340, CABA</span>
+                </div>
+              </div>
+              <div class="booking__detail">
+                <span class="booking__detail-icon">◌</span>
+                <div>
+                  <strong>WhatsApp</strong>
+                  <span>+54 11 4567-8901</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="booking__scarcity">
+              <span class="booking__scarcity-dot"></span>
+              Solo quedan <strong>3 turnos disponibles</strong> esta semana
+            </div>
+          </div>
+
+          <div class="booking__form-wrap reveal reveal--delay-2">
+            <form class="booking__form" id="bookingForm" novalidate>
+
+              <div class="form__group">
+                <label class="form__label" for="nombre">Nombre completo</label>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  class="form__input"
+                  placeholder="Tu nombre"
+                  autocomplete="name"
+                />
+                <span class="form__error" id="nombre-error"></span>
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="telefono">Teléfono / WhatsApp</label>
+                <input
+                  type="tel"
+                  id="telefono"
+                  name="telefono"
+                  class="form__input"
+                  placeholder="+54 11 0000-0000"
+                  autocomplete="tel"
+                />
+                <span class="form__error" id="telefono-error"></span>
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="servicio">Servicio deseado</label>
+                <div class="form__select-wrap">
+                  <select id="servicio" name="servicio" class="form__input form__select">
+                    <option value="">Seleccionar servicio</option>
+                    <option value="corte-clasico">Corte Clásico — $3.500</option>
+                    <option value="fade">Fade Premium — $4.200</option>
+                    <option value="barba">Arreglo de Barba — $2.800</option>
+                    <option value="noble-experience">Noble Experience — $6.500</option>
+                  </select>
+                  <span class="form__select-arrow">↓</span>
+                </div>
+                <span class="form__error" id="servicio-error"></span>
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="fecha">Fecha preferida</label>
+                <input
+                  type="date"
+                  id="fecha"
+                  name="fecha"
+                  class="form__input"
+                />
+                <span class="form__error" id="fecha-error"></span>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+                <span class="btn__text">Confirmar mi turno</span>
+                <span class="btn__loader" id="btnLoader"></span>
+                <span class="btn__arrow">→</span>
+              </button>
+
+              <p class="form__disclaimer">
+                Te contactaremos en menos de 2 horas para confirmar disponibilidad.
+              </p>
+
+            </form>
+
+            <!-- Success message -->
+            <div class="form__success" id="formSuccess">
+              <div class="form__success-icon">✦</div>
+              <h3>¡Solicitud recibida!</h3>
+              <p>Te contactaremos en menos de 2 horas para confirmar tu turno. Prepárate para la experiencia.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECCIÓN 8: CTA FINAL
+    ============================================================ -->
+    <section class="cta-final">
+      <div class="cta-final__bg">
+        <img
+          src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1800&q=70&auto=format&fit=crop"
+          alt="Noble Barber"
+          loading="lazy"
+        />
+        <div class="cta-final__overlay"></div>
+      </div>
+      <div class="container">
+        <div class="cta-final__content reveal">
+          <p class="section-label" style="color: var(--gold);">Un último pensamiento</p>
+          <h2 class="cta-final__title">
+            Los hombres que cuidan su imagen<br />
+            <em>no esperan a "tener tiempo".</em>
+          </h2>
+          <p class="cta-final__text">
+            Cada semana que postergas, es una semana en la que tu imagen no está trabajando para ti.<br />
+            Reserva hoy. Siente la diferencia el martes.
+          </p>
+          <a href="#reserva" class="btn btn--gold">
+            Reservar ahora — Turnos limitados
+            <span class="btn__arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <a href="#inicio" class="nav__logo">
+            <span class="nav__logo-icon">✦</span>
+            <span class="nav__logo-text">Noble<strong>Barber</strong></span>
+          </a>
+          <p class="footer__tagline">
+            Tu imagen habla antes que tú.<br />
+            Asegúrate de que diga lo correcto.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20">
+                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20">
+                <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__nav">
+          <h4 class="footer__nav-title">Explorar</h4>
+          <ul>
+            <li><a href="#beneficios">Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#reserva">Reservar</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__nav">
+          <h4 class="footer__nav-title">Servicios</h4>
+          <ul>
+            <li><a href="#reserva">Corte Clásico</a></li>
+            <li><a href="#reserva">Fade Premium</a></li>
+            <li><a href="#reserva">Arreglo de Barba</a></li>
+            <li><a href="#reserva">Noble Experience</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__contact">
+          <h4 class="footer__nav-title">Contacto</h4>
+          <p>Av. Santa Fe 2340<br />Buenos Aires, Argentina</p>
+          <p>Lun–Sáb · 9:00 a 20:00</p>
+          <p>+54 11 4567-8901</p>
+          <p>hola@noblebarber.com</p>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 Noble Barber Studio. Todos los derechos reservados.</p>
+        <p>Diseñado con precisión artesanal.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
